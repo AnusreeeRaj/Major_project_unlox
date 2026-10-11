@@ -1,0 +1,24 @@
+{
+  "name": "unfazed",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "unfazed-frontend",
+    "unfazed-backend"
+  ],
+  "scripts": {
+    "build": "npm run build -w unfazed-frontend",
+    "dev": "npm run dev -w unfazed-frontend",
+    "start": "npm start -w unfazed-backend",
+    "test": "npm test -w unfazed-backend",
+    "demo:backend": "node scripts/demo-backend.mjs",
+    "demo:frontend": "node scripts/demo-frontend.mjs",
+    "test:ui": "node scripts/ui-check.mjs",
+    "format": "prettier --write \"**/*.{js,jsx,mjs,css,json,md}\" --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.1",
+    "prettier": "^3.9.9"
+  }
+}

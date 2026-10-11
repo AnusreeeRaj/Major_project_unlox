@@ -1,0 +1,27 @@
+{
+  "name": "unfazed-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node src/seed.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.9.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "socket.io": "^4.8.0",
+    "razorpay": "^2.9.0",
+    "pdfkit": "^0.15.0",
+    "luxon": "^3.5.0",
+    "express-rate-limit": "^7.5.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
